@@ -1,0 +1,24 @@
+@import "media__block";
+
+
+@mixin clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content:'';
+  }
+}
+
+.block{
+  @include clearfix
+}
+.block__item {
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  text-align: center;
+}
+.l-main {
+  text-align: center;
+  margin-top: 20px;
+}

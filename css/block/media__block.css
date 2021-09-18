@@ -1,0 +1,14 @@
+@media (min-width: 700px) {
+  .l-main {
+    width: 50%;
+    margin: auto;
+    padding-top: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .l-main {
+    width: 33.3333333333%;
+  }
+}
+
+/*# sourceMappingURL=media__block.css.map */

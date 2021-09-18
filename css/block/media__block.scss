@@ -1,0 +1,11 @@
+.l-main {
+  @media (min-width: 700px) {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  @media (min-width: 1200px) {
+    width: percentage(4 / 12);
+  }
+}

@@ -1,0 +1,112 @@
+@import 'header/header_style';
+@import 'slider/slider';
+@import 'block/block';
+@import "pricingPlan/pricingPlan";
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap');
+
+$font-stack:    'IBM Plex Sans Arabic', sans-serif;;
+
+body {
+  font-family: $font-stack;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.content {
+  padding: 100px 0 0 0;
+}
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+
+//  Dont_Know
+.heading {
+  text-align: center;
+  margin: auto;
+  @media (min-width: 700px) {
+    width: 50%;
+  }
+}
+
+.padding {
+  padding: 30px 5px 30px 5px;
+  @media (min-width: 1200px) {
+    padding: 160px 60px 120px 60px;
+  }
+}
+
+.button-main {
+  margin-top: 40px;
+  margin-right: 20px;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  padding: 15px 25px 15px 25px;
+  font-size: 15px;
+  font-weight: bold;
+  border: #00897b solid 2px;
+  transition: 0.7s;
+}
+.button-main:last-child {
+  margin-right: 0px;
+}
+.button-main:hover {
+  background-color: #00897b;
+  color: white;
+}
+.card {
+  border: none !important;
+}
+
+
+.aboutUs img{
+  margin-top: 54px;
+}
+.aboutUs h2{
+  padding: 35px 0 20px 0;
+}
+
+
+.ourServices {
+  background-color: #00897b;
+}
+.ourServices-card h2{
+  margin: 55px 0 20px 0;
+}
+.ourServices img {
+  margin-top: 54px;
+}
+.ourServices button {
+  margin-bottom: 50px;
+}
+.ourServices__Title {
+  margin-bottom: 30px;
+  @media (min-width: 700px) {
+    margin-bottom: 60px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 115px;
+  }
+}
+.ourServices__block div.col {
+  @media (min-width: 700px) {
+    margin-bottom: 30px!important;
+  }
+}
+
+.latestWorks img {
+  max-width: 100%;
+  height: auto;
+}
+//

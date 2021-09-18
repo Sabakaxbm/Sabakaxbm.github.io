@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap");
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 2;
+}
+
+.header__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.header__logo {
+  position: relative;
+  z-index: 3;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__list {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.header__list button {
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
+.header__list li {
+  list-style: none;
+  margin: 0 0 0 30px;
+}
+
+.header__link {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .header__body {
+    height: 50px;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+
+  .header__burger:before,
+.header__burger:after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+  }
+
+  .header__burger:before {
+    top: 0;
+  }
+
+  .header__burger:after {
+    bottom: 0;
+  }
+
+  .header__burger span {
+    position: absolute;
+    background-color: black;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.5ms ease 0s;
+  }
+
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header__burger.active span {
+    transform: scale(0);
+  }
+
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px 0px 0px;
+    overflow: auto;
+    background-color: gray;
+  }
+
+  .header__menu.active {
+    top: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__list {
+    display: block;
+    padding: 0;
+  }
+
+  .header__list li {
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+
+  .header__link {
+    font-size: 24px;
+  }
+}
+.slider img {
+  max-width: 100%;
+}
+
+@media (min-width: 700px) {
+  .l-main {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .l-main {
+    width: 33.3333333333%;
+  }
+}
+
+.block:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.block__item {
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  text-align: center;
+}
+
+.l-main {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pricingPlan {
+  background-color: #f0f1f1;
+}
+
+.benefits-text {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.benefits-text:first-child {
+  margin-top: 50px;
+}
+
+.price-btn {
+  width: 155px;
+}
+
+body {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.content {
+  padding: 100px 0 0 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.heading {
+  text-align: center;
+  margin: auto;
+}
+@media (min-width: 700px) {
+  .heading {
+    width: 50%;
+  }
+}
+
+.padding {
+  padding: 30px 5px 30px 5px;
+}
+@media (min-width: 1200px) {
+  .padding {
+    padding: 160px 60px 120px 60px;
+  }
+}
+
+.button-main {
+  margin-top: 40px;
+  margin-right: 20px;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  padding: 15px 25px 15px 25px;
+  font-size: 15px;
+  font-weight: bold;
+  border: #00897b solid 2px;
+  transition: 0.7s;
+}
+
+.button-main:last-child {
+  margin-right: 0px;
+}
+
+.button-main:hover {
+  background-color: #00897b;
+  color: white;
+}
+
+.card {
+  border: none !important;
+}
+
+.aboutUs img {
+  margin-top: 54px;
+}
+
+.aboutUs h2 {
+  padding: 35px 0 20px 0;
+}
+
+.ourServices {
+  background-color: #00897b;
+}
+
+.ourServices-card h2 {
+  margin: 55px 0 20px 0;
+}
+
+.ourServices img {
+  margin-top: 54px;
+}
+
+.ourServices button {
+  margin-bottom: 50px;
+}
+
+.ourServices__Title {
+  margin-bottom: 30px;
+}
+@media (min-width: 700px) {
+  .ourServices__Title {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .ourServices__Title {
+    margin-bottom: 115px;
+  }
+}
+
+@media (min-width: 700px) {
+  .ourServices__block div.col {
+    margin-bottom: 30px !important;
+  }
+}
+
+.latestWorks img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

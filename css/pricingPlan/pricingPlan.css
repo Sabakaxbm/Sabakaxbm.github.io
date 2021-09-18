@@ -1,0 +1,39 @@
+.pricingPlan__block {
+  background-color: #f0f1f1;
+}
+
+.img-wrap {
+  position: relative;
+}
+
+.img-wrap img {
+  width: 100%;
+}
+@media (min-width: 720px) {
+  .img-wrap img {
+    width: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .img-wrap img {
+    width: 360px;
+  }
+}
+
+.img-wrap .img_text {
+  font-size: 20px;
+  font-weight: unset;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.benefits-text {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+/*# sourceMappingURL=pricingPlan.css.map */
