@@ -1,5 +1,5 @@
 .footer .container {
-  width: 1030px;
+  max-width: 1030px;
 }
 footer:after {
   content: '';
@@ -27,16 +27,23 @@ footer:after {
   margin-bottom: 80px;
   font-weight: bold;
 }
-.footer .col:first-child {
-  padding-right: 30px;
-}
 .footer__form {
   margin-bottom: 30px;
 }
+.footer .col {
+  margin-bottom: 30px;
+  @media (min-width: 720px) {
+    margin-bottom: 0;
+  }
+}
+
+footer .col:last-child {
+  margin-bottom: 0;
+}
 .footer input {
   height: 80px;
-  border-radius: 15px;
   padding: 0px 20px 0px 20px;
+  border-radius: 15px;
   font-weight: bold;
   box-shadow: none;
   border: white solid 2px;

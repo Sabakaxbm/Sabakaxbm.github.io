@@ -213,6 +213,7 @@
 }
 
 .ourTeamMember__block img {
+  max-width: 100%;
   margin-bottom: 35px;
 }
 
@@ -221,7 +222,7 @@
 }
 
 .footer .container {
-  width: 1030px;
+  max-width: 1030px;
 }
 
 footer:after {
@@ -255,18 +256,27 @@ footer:after {
   font-weight: bold;
 }
 
-.footer .col:first-child {
-  padding-right: 30px;
-}
-
 .footer__form {
   margin-bottom: 30px;
 }
 
+.footer .col {
+  margin-bottom: 30px;
+}
+@media (min-width: 720px) {
+  .footer .col {
+    margin-bottom: 0;
+  }
+}
+
+footer .col:last-child {
+  margin-bottom: 0;
+}
+
 .footer input {
   height: 80px;
-  border-radius: 15px;
   padding: 0px 20px 0px 20px;
+  border-radius: 15px;
   font-weight: bold;
   box-shadow: none;
   border: white solid 2px;
