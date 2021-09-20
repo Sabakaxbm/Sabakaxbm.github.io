@@ -1,0 +1,9 @@
+.ourTeamIcon a {
+  padding-right: 15px;
+}
+
+.ourTeamIcon a:last-child {
+  padding-right: 0;
+}
+
+/*# sourceMappingURL=ourTeamMember.css.map */

@@ -1,0 +1,26 @@
+.ourServices {
+  background-color: #00897b;
+}
+.ourServices-card h2{
+  margin: 55px 0 20px 0;
+}
+.ourServices img {
+  margin-top: 54px;
+}
+.ourServices button {
+  margin-bottom: 50px;
+}
+.ourServices__Title {
+  margin-bottom: 30px;
+  @media (min-width: 700px) {
+    margin-bottom: 60px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 115px;
+  }
+}
+.ourServices__block div.col {
+  @media (min-width: 700px) {
+    margin-bottom: 30px!important;
+  }
+}

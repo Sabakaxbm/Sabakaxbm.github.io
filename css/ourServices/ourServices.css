@@ -1,0 +1,37 @@
+.ourServices {
+  background-color: #00897b;
+}
+
+.ourServices-card h2 {
+  margin: 55px 0 20px 0;
+}
+
+.ourServices img {
+  margin-top: 54px;
+}
+
+.ourServices button {
+  margin-bottom: 50px;
+}
+
+.ourServices__Title {
+  margin-bottom: 30px;
+}
+@media (min-width: 700px) {
+  .ourServices__Title {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .ourServices__Title {
+    margin-bottom: 115px;
+  }
+}
+
+@media (min-width: 700px) {
+  .ourServices__block div.col {
+    margin-bottom: 30px !important;
+  }
+}
+
+/*# sourceMappingURL=ourServices.css.map */

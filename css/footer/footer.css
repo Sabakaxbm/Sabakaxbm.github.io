@@ -1,0 +1,29 @@
+footer {
+  position: relative;
+  background-image: url("../../img/footer__bg.jpg");
+}
+
+footer:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.footer__wrap {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+}
+
+.footer .card {
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=footer.css.map */
