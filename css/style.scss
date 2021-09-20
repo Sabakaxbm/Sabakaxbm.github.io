@@ -2,6 +2,9 @@
 @import 'slider/slider';
 @import 'block/block';
 @import "pricingPlan/pricingPlan";
+@import 'ourTeamMember/ourTeamMember';
+@import 'footer/footer';
+@import 'ourServices/ourServices';
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap');
 
@@ -48,7 +51,6 @@ body {
 }
 
 .button-main {
-  margin-top: 40px;
   margin-right: 20px;
   background-image: none;
   background-color: transparent;
@@ -79,35 +81,16 @@ body {
 }
 
 
-.ourServices {
-  background-color: #00897b;
-}
-.ourServices-card h2{
-  margin: 55px 0 20px 0;
-}
-.ourServices img {
-  margin-top: 54px;
-}
-.ourServices button {
-  margin-bottom: 50px;
-}
-.ourServices__Title {
-  margin-bottom: 30px;
-  @media (min-width: 700px) {
-    margin-bottom: 60px;
-  }
-  @media (min-width: 1200px) {
-    margin-bottom: 115px;
-  }
-}
-.ourServices__block div.col {
-  @media (min-width: 700px) {
-    margin-bottom: 30px!important;
-  }
+footer{
+  position: relative;
+  background-image: url("../img/footer__bg.jpg");
 }
 
 .latestWorks img {
   max-width: 100%;
   height: auto;
+}
+.title {
+  margin-bottom: 110px;
 }
 //
