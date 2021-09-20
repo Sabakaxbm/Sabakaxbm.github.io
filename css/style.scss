@@ -23,8 +23,6 @@ body {
   padding: 100px 0 0 0;
 }
 
-
-
 *,
 *::before,
 *::after {
@@ -65,6 +63,7 @@ body {
   margin-right: 0px;
 }
 .button-main:hover {
+  border-color: #00897b;
   background-color: #00897b;
   color: white;
 }
@@ -80,7 +79,10 @@ body {
   padding: 35px 0 20px 0;
 }
 
-
+.slider {
+  position: relative;
+  background-image: url("../img/slider__img.png");
+}
 footer{
   position: relative;
   background-image: url("../img/footer__bg.jpg");
@@ -89,6 +91,12 @@ footer{
 .latestWorks img {
   max-width: 100%;
   height: auto;
+}
+.latestWorks__buttons button {
+  margin-bottom: 20px!important;
+  @media (max-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
 .title {
   margin-bottom: 110px;

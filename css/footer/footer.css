@@ -40,7 +40,7 @@ footer:after {
 .footer .col {
   margin-bottom: 30px;
 }
-@media (min-width: 720px) {
+@media (min-width: 750px) {
   .footer .col {
     margin-bottom: 0;
   }
@@ -76,6 +76,7 @@ footer .col:last-child {
   font-weight: bold;
   border: white solid 2px;
   border-radius: 15px;
+  background-color: white;
 }
 
 .footer__reserved {
